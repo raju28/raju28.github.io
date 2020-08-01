@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Loader animation set</title>
-    <meta name="keywords" content="loaders, loader, spinners, loading, indicator, flat, css, simple, css3, github, html5">
+    <meta name="keywords" content="loaders, loader, spinners, loading, indicator, flat, css, simple, css3, github, html5, animation, loader animation, loader css3, spinner">
     <meta name="description" content="Simple CSS Loader animation set">
     <link rel="stylesheet" href="stylesheets/reset.css" />
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/loader.css" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173943916-1"></script>
     <script>
@@ -21,29 +23,53 @@
   </head>
   <body>
     <header>
-      <h1>Loader animation set</h1>
+      <h1>Loader Animation Set</h1>
     </header>
     <div class="wrapper">
       <div class="spinner-wrap">
         <div class="rm-circle"></div>
+        <div class="source--trigger" data-loader="circle">
+          <img src="images/dev.svg" width="15" height="15">
+          <span>Source</span>
+        </div>
       </div>
       <div class="spinner-wrap">
         <div class="rm-two-tone-circle"></div>
+        <div class="source--trigger" data-loader="two-tone-circle">
+          <img src="images/dev.svg" width="15" height="15">
+          <span>Source</span>
+        </div>
       </div>
       <div class="spinner-wrap">
         <div class="rm-dot-circle"></div>
+        <div class="source--trigger" data-loader="dot-circle">
+          <img src="images/dev.svg" width="15" height="15">
+          <span>Source</span>
+        </div>
       </div>
       <div class="spinner-wrap">
         <div class="rm-clock"></div>
+        <div class="source--trigger" data-loader="clock">
+          <img src="images/dev.svg" width="15" height="15">
+          <span>Source</span>
+        </div>
       </div>
       <div class="spinner-wrap">
         <div class="rm-bounce">
           <div class="bounce-one"></div>
           <div class="bounce-two"></div>
         </div>
+        <div class="source--trigger" data-loader="bounce">
+          <img src="images/dev.svg" width="15" height="15">
+          <span>Source</span>
+        </div>
       </div>
       <div class="spinner-wrap">
         <div class="rm-wave"></div>
+        <div class="source--trigger" data-loader="wave">
+          <img src="images/dev.svg" width="15" height="15">
+          <span>Source</span>
+        </div>
       </div>
       <div class="spinner-wrap">
         <div class="rm-dot-bounce">
@@ -51,15 +77,31 @@
           <div class="dot-bounce dot--two"></div>
           <div class="dot-bounce dot--three"></div>
         </div>
+        <div class="source--trigger" data-loader="dot-bounce">
+          <img src="images/dev.svg" width="15" height="15">
+          <span>Source</span>
+        </div>
       </div>
       <div class="spinner-wrap">
         <div class="rm-twin-circle"></div>
+        <div class="source--trigger" data-loader="twin-circle">
+          <img src="images/dev.svg" width="15" height="15">
+          <span>Source</span>
+        </div>
       </div>
       <div class="spinner-wrap">
         <div class="rm-spinner-dots"></div>
+        <div class="source--trigger" data-loader="spinner-dots">
+          <img src="images/dev.svg" width="15" height="15">
+          <span>Source</span>
+        </div>
       </div>
       <div class="spinner-wrap">
         <div class="rm-swing-lines"></div>
+        <div class="source--trigger" data-loader="swing-lines">
+          <img src="images/dev.svg" width="15" height="15">
+          <span>Source</span>
+        </div>
       </div>
       <div class="spinner-wrap">
         <div class="rm-swing-bar">
@@ -68,10 +110,760 @@
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
+        <div class="source--trigger" data-loader="swing-bar">
+          <img src="images/dev.svg" width="15" height="15">
+          <span>Source</span>
+        </div>
       </div>
       <div class="spinner-wrap">
         <div class="rm-coffee"></div>
+        <div class="source--trigger" data-loader="coffee">
+          <img src="images/dev.svg" width="15" height="15">
+          <span>Source</span>
+        </div>
       </div>
     </div>
+    <div class="source-code-wrapper">
+      <div class="close-btn">
+        <img src="images/close.svg" alt="close the modal box" width="20" height="20">
+      </div>
+      <div class="content" data-loader="circle">
+        <textarea readonly class="content--html">
+          <div class="rm-circle"></div>
+        </textarea>
+        <textarea readonly class="content--css">
+          .rm-circle {
+            width: 45px;
+            height: 45px;
+            margin: 47px auto;
+            background: transparent;
+            border-top: 4px solid #000;
+            border-right: 4px solid transparent;
+            border-radius: 50%;
+            -webkit-animation: 1s spin linear infinite;
+            animation: 1s spin linear infinite;
+          }
+
+          @-webkit-keyframes spin {
+            from {
+              -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+            }
+
+            to {
+              -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+            }
+          }
+
+          @keyframes spin {
+            from {
+              -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+            }
+
+            to {
+              -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+            }
+          }
+        </textarea>
+      </div>
+      <div class="content" data-loader="two-tone-circle">
+        <textarea readonly class="content--html">
+          <div class="rm-two-tone-circle"></div>
+        </textarea>
+        <textarea readonly class="content--css">
+          .rm-two-tone-circle {
+            height: 50px;
+            width: 50px;
+            border-width: 3px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5);
+            border-radius: 100%;
+            animation: clockwise 1s linear infinite;
+            margin: 45px auto;
+          }
+
+          @-webkit-keyframes clockwise {
+            to {
+              transform: rotate(360deg) translatez(0);
+            }
+          }
+
+          @keyframes clockwise {
+            to {
+              transform: rotate(360deg) translatez(0);
+            }
+          }
+        </textarea>
+      </div>
+      <div class="content" data-loader="dot-circle">
+        <textarea readonly class="content--html">
+          <div class="rm-dot-circle"></div>
+        </textarea>
+        <textarea readonly class="content--css">
+          .rm-dot-circle {
+            position: relative;
+            height: 55px;
+            width: 55px;
+            border-radius: 50%;
+            border: 3px solid rgba(0, 0, 0, 0.7);
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            -webkit-animation: dot-circle 2s linear infinite;
+            animation: dot-circle 2s linear infinite;
+            margin: 42px auto;
+          }
+
+          .rm-dot-circle:after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 20px;
+            width: 11px;
+            height: 11px;
+            border-radius: 10px;
+            background-color: #000;
+          }
+
+          @-webkit-keyframes dot-circle {
+            0% {
+              -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+              -webkit-transform: rotate(360deg);
+            }
+          }
+
+          @keyframes loader1 {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        </textarea>
+      </div>
+      <div class="content" data-loader="clock">
+        <textarea readonly class="content--html">
+          <div class="rm-clock"></div>
+        </textarea>
+        <textarea readonly class="content--css">
+          .rm-clock {
+            border-radius: 50%;
+            border: 3px solid #000;
+            height: 55px;
+            width: 55px;
+            position: relative;
+            margin: 42px auto;
+          }
+
+          .rm-clock:after {
+            content: "";
+            position: absolute;
+            background-color: #000;
+            top: 5px;
+            left: 48%;
+            height: 22px;
+            width: 4px;
+            border-radius: 5px;
+            -webkit-transform-origin: 50% 97%;
+            transform-origin: 50% 97%;
+            -webkit-animation: clockMins 2s linear infinite;
+            animation: clockMins 2s linear infinite;
+          }
+
+          @keyframes clockMins {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+
+          .rm-clock:before {
+            content: "";
+            position: absolute;
+            background-color: #000;
+            top: 8px;
+            left: 48%;
+            height: 19px;
+            width: 4px;
+            border-radius: 5px;
+            -webkit-transform-origin: 50% 94%;
+            transform-origin: 50% 94%;
+            -webkit-animation: clockHours 12s linear infinite;
+            animation: clockHours 12s linear infinite;
+          }
+
+          @-webkit-keyframes clockHours {
+            0% {
+              -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+              -webkit-transform: rotate(360deg);
+            }
+          }
+
+          @keyframes clockHours {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        </textarea>
+      </div>
+      <div class="content" data-loader="bounce">
+        <textarea readonly class="content--html">
+          <div class="rm-bounce">
+            <div class="bounce-one"></div>
+            <div class="bounce-two"></div>
+          </div>
+        </textarea>
+        <textarea readonly class="content--css">
+          .rm-bounce {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            margin: 50px auto;
+          }
+
+          .rm-bounce .bounce-one, .rm-bounce .bounce-two {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #000;
+            opacity: 0.6;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-animation: bounce 2.0s infinite ease-in-out;
+            animation: bounce 2.0s infinite ease-in-out;
+          }
+
+          .rm-bounce .bounce-two {
+            -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+          }
+
+          @-webkit-keyframes bounce {
+            0%, 100% {
+              -webkit-transform: scale(0.0);
+            }
+
+            50% {
+              -webkit-transform: scale(1.0);
+            }
+          }
+
+          @keyframes bounce {
+            0%, 100% {
+              transform: scale(0.0);
+              -webkit-transform: scale(0.0);
+            }
+
+            50% {
+              transform: scale(1.0);
+              -webkit-transform: scale(1.0);
+            }
+          }
+        </textarea>
+      </div>
+      <div class="content" data-loader="wave">
+        <textarea readonly class="content--html">
+          <div class="rm-wave"></div>
+        </textarea>
+        <textarea readonly class="content--css">
+          .rm-wave {
+            position: relative;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin: 49px auto;
+          }
+
+          .rm-wave:before, .rm-wave:after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid #000;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+          }
+
+          .rm-wave:before {
+            -webkit-animation: wave-outer 0.6s infinite linear;
+            animation: wave-outer 0.6s infinite linear;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+          }
+
+          .rm-wave:after {
+            -webkit-animation: wave-inner 0.6s infinite linear;
+            animation: wave-inner 0.6s infinite linear;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+          }
+
+          @-webkit-keyframes wave-outer {
+            from {
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+            }
+
+            to {
+              opacity: 0;
+              -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+            }
+          }
+
+          @keyframes wave-outer {
+            from {
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+            }
+
+            to {
+              opacity: 0;
+              -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+            }
+          }
+
+          @-webkit-keyframes wave-inner {
+            from {
+              opacity: 0;
+              -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+            }
+
+            to {
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+            }
+          }
+
+          @keyframes wave-inner {
+            from {
+              opacity: 0;
+              -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+            }
+
+            to {
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+            }
+          }
+        </textarea>
+      </div>
+      <div class="content" data-loader="dot-bounce">
+        <textarea readonly class="content--html">
+          <div class="rm-dot-bounce">
+            <div class="dot-bounce dot--one"></div>
+            <div class="dot-bounce dot--two"></div>
+            <div class="dot-bounce dot--three"></div>
+          </div>
+        </textarea>
+        <textarea readonly class="content--css">
+          .rm-dot-bounce {
+            margin: 57px auto;
+            text-align: center;
+          }
+
+          .dot-bounce {
+            width: 14px;
+            height: 14px;
+            margin: 0 2px;
+            background-color: #000;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: bouncedelay 1.4s infinite ease-in-out both;
+            animation: bouncedelay 1.4s infinite ease-in-out both;
+          }
+
+          .dot--one {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+          }
+
+          .dot--two {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+          }
+
+          @keyframes bouncedelay {
+            0%, 80%, 100% {
+              -webkit-transform: scale(0);
+              transform: scale(0);
+            }
+
+            40% {
+              -webkit-transform: scale(1.0);
+              transform: scale(1.0);
+            }
+          }
+        </textarea>
+      </div>
+      <div class="content" data-loader="twin-circle">
+        <textarea readonly class="content--html">
+          <div class="rm-twin-circle"></div>
+        </textarea>
+        <textarea readonly class="content--css">
+          .rm-twin-circle {
+            position: relative;
+            margin: 70px auto;
+          }
+
+          .rm-twin-circle:before, .rm-twin-circle:after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            background: #000;
+            top: calc(50% - 10px);
+            left: calc(50% - 10px);
+            -webkit-animation: 2s ease-in-out infinite;
+            animation: 2s ease-in-out infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+          }
+
+          .rm-twin-circle:before {
+            opacity: 0.8;
+            -webkit-animation-name: moveLeft;
+            animation-name: moveLeft;
+          }
+
+          .rm-twin-circle:after {
+            opacity: 0.6;
+            -webkit-animation-name: moveRight;
+            animation-name: moveRight;
+          }
+
+          @-webkit-keyframes moveLeft {
+            25% {
+              -webkit-transform: translatex(-50%);
+              transform: translatex(-50%);
+            }
+
+            50%, 60% {
+              -webkit-transform: translatex(0);
+              transform: translatex(0);
+            }
+
+            100% {
+              -webkit-transform: translatex(50%);
+              transform: translatex(50%);
+            }
+          }
+
+          @keyframes moveLeft {
+            25% {
+              -webkit-transform: translatex(-50%);
+              transform: translatex(-50%);
+            }
+
+            50%, 60% {
+              -webkit-transform: translatex(0);
+              transform: translatex(0);
+            }
+
+            100% {
+              -webkit-transform: translatex(50%);
+              transform: translatex(50%);
+            }
+          }
+
+          @-webkit-keyframes moveRight {
+            25% {
+              -webkit-transform: translatex(50%);
+              transform: translatex(50%);
+            }
+
+            50%, 60% {
+              -webkit-transform: translatex(0);
+              transform: translatex(0);
+            }
+
+            100% {
+              -webkit-transform: translatex(-50%);
+              transform: translatex(-50%);
+            }
+          }
+
+          @keyframes moveRight {
+            25% {
+              -webkit-transform: translatex(50%);
+              transform: translatex(50%);
+            }
+
+            50%, 60% {
+              -webkit-transform: translatex(0);
+              transform: translatex(0);
+            }
+
+            100% {
+              -webkit-transform: translatex(-50%);
+              transform: translatex(-50%);
+            }
+          }
+        </textarea>
+      </div>
+      <div class="content" data-loader="spinner-dots">
+        <textarea readonly class="content--html">
+          <div class="rm-spinner-dots"></div>
+        </textarea>
+        <textarea readonly class="content--css">
+          .rm-spinner-dots {
+            position: relative;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #000;
+            transform-origin: 50% 50%;
+            animation: spin-dot 1s infinite linear;
+            margin: 60px auto;
+          }
+
+          .rm-spinner-dots:before, .rm-spinner-dots:after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #000;
+          }
+
+          .rm-spinner-dots:before {
+            left: -28px;
+            opacity: 0.25;
+          }
+
+          .rm-spinner-dots:after {
+            left: 28px;
+            opacity: 0.25;
+          }
+
+          @keyframes spin-dot {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            50% {
+              transform: rotate(180deg);
+            }
+
+            100% {
+              transform: rotate(180deg);
+            }
+          }
+        </textarea>
+      </div>
+      <div class="content" data-loader="swing-lines">
+        <textarea readonly class="content--html">
+          <div class="rm-swing-lines"></div>
+        </textarea>
+        <textarea readonly class="content--css">
+          .rm-swing-lines {
+            position: relative;
+            background: #000;
+            width: 4px;
+            height: 32px;
+            border-radius: 6px;
+            -webkit-animation: jump-line-1 1s ease infinite alternate;
+            animation: jump-line-1 1s ease infinite alternate;
+            -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
+            margin: 48px auto;
+          }
+
+          .rm-swing-lines:before, .rm-swing-lines:after {
+            content: '';
+            position: absolute;
+            background: #000;
+            width: 4px;
+            height: 32px;
+            border-radius: 6px;
+            top: 0;
+            -webkit-animation: jump-line-2 1s ease infinite;
+            animation: jump-line-2 1s ease infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+          }
+
+          .rm-swing-lines:before {
+            left: -8px;
+          }
+
+          .rm-swing-lines:after {
+            left: 8px;
+            -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+          }
+
+          @-webkit-keyframes jump-line-1 {
+            from {
+              -webkit-transform: translateY(15px);
+              transform: translateY(15px);
+            }
+
+            to {
+              -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+            }
+          }
+
+          @keyframes jump-line-1 {
+            from {
+              -webkit-transform: translateY(15px);
+              transform: translateY(15px);
+            }
+
+            to {
+              -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+            }
+          }
+
+          @-webkit-keyframes jump-line-2 {
+            from {
+              -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+            }
+
+            to {
+              -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+            }
+          }
+
+          @keyframes jump-line-2 {
+            from {
+              -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+            }
+
+            to {
+              -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+            }
+          }
+        </textarea>
+      </div>
+      <div class="content" data-loader="coffee">
+        <textarea readonly class="content--html">
+          <div class="rm-coffee"></div>
+        </textarea>
+        <textarea readonly class="content--css">
+          .rm-coffee {
+            height: 35px;
+            width: 35px;
+            position: relative;
+            background: #fff;
+            border: 4px solid #fff;
+            box-shadow: 0 0 0 3px #000;
+            border-radius: 0px 0px 100px 105px;
+            background-image: linear-gradient(0deg, #000 0, #000 90px, transparent 85px, transparent 195px);
+            background-size: 206px 193px;
+            background-position: 0 0;
+            animation: fill 2s infinite;
+            margin: 52px auto;
+          }
+
+          .rm-coffee:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 15px;
+            border: 3px solid #000;
+            border-radius: 0 40px 40px 0;
+            right: -26px;
+            top: -3px;
+          }
+
+          @keyframes fill {
+            100% {
+              background-position: 0 -110px;
+            }
+          }
+        </textarea>
+      </div>
+      <div class="content" data-loader="swing-bar">
+        <textarea readonly class="content--html">
+          <div class="rm-swing-bar">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </textarea>
+        <textarea readonly class="content--css">
+          .rm-swing-bar {
+            display: inline-flex;
+            margin: 60px auto;
+          }
+
+          .rm-swing-bar .bar {
+            height: 20px;
+            width: 4px;
+            background: #000;
+            margin-right: 4px;
+            border-radius: 6px;
+            -webkit-animation: bar-bounce 1s infinite ease-in-out;
+            animation: bar-bounce 1s infinite ease-in-out;
+          }
+
+          .rm-swing-bar .bar:nth-child(1) {
+            animation-delay: 0s;
+          }
+
+          .rm-swing-bar .bar:nth-child(2) {
+            animation-delay: 0.2s;
+          }
+
+          .rm-swing-bar .bar:nth-child(3) {
+            animation-delay: 0.3s;
+          }
+
+          .rm-swing-bar .bar:nth-child(4) {
+            animation-delay: 0.4s;
+          }
+
+          @keyframes bar-bounce {
+            0% {
+              transform: scale(1);
+            }
+
+            20% {
+              transform: scale(1, 2);
+            }
+
+            40% {
+              transform: scale(1);
+            }
+          }
+        </textarea>
+      </div>
+    </div>
+    <script type="text/javascript" src="javascripts/jquery-3.5.1.min.js" defer></script>
+    <script type="text/javascript" src="javascripts/app.js" defer></script>
   </body>
 </html>
